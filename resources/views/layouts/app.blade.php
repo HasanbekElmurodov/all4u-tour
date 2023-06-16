@@ -1,7 +1,7 @@
 
-  <head>
+<head>
     <meta charset="utf-8" />
-    <title>ALL4U Tourism - tezkor va ishonchli tur korxonasi !</title>
+    <title>ALL4U Tourism - tezkor va ishonchli tur korxonasi !!!</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="All4U, ALL4Tourism, All Tourism" name="keywords" />
     <meta
@@ -51,7 +51,7 @@
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+          <div class="col-lg-8 text-center text-lg-left mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center">
               <p><i class="fa fa-envelope mr-2"></i>worldmiral@mail.ru</p>
               <p class="text-body px-3">|</p>
@@ -61,7 +61,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6 text-center text-lg-right">
+          <div class="col-lg-4 text-center text-lg-right">
             <div class="d-inline-flex align-items-center">
               <a class="text-primary px-3" href="{{ route('locale.change', 'en') }}">
                 <img
@@ -109,6 +109,26 @@
         <nav
           class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
         >
+                      <div class="select_lang">
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#langCollapse"
+              class="mobLangButton"
+            >
+              EN
+            </button>
+            <ul id="langCollapse" class="collapse">
+              <li><a href="{{ route('locale.change', 'en') }}">EN</a></li>
+              <li><a href="{{ route('locale.change', 'ru') }}">RU </a></li>
+              <li><a href="{{ route('locale.change', 'uz') }}">Uz</a></li>
+              <li><a href="{{ route('locale.change', 'cn') }}">Cn</a></li>
+              <li><a href="{{ route('locale.change', 'tr') }}">Tr</a></li>
+              <li><a href="{{ route('locale.change', 'ar') }}">Sa</a></li>
+            </ul>
+            <i class="fa fa-angle-down mr-2"></i>
+          </div>
+
           <a href="/" class="navbar-brand">
             <img class="mylogo" src="{{asset('/website/assets/img/logo/plane.svg')}}" />
           </a>
@@ -180,7 +200,7 @@
 
     <!-- Footer Start -->
     <div
-      class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5"
+      class="container-fluid bg-dark text-white-50 py px-sm-3 px-lg-5"
       style="margin-top: 90px"
     >
       <div class="row pt-5">
@@ -276,30 +296,14 @@
             >
           </p>
           <p><i class="fa fa-envelope mr-2"></i>worldmiral@mail.ru</p>
-          <h6
-            class="text-white text-uppercase mt-4 mb-3"
-            style="letter-spacing: 5px"
-          >
-            {{ __('footerNewsPostTitle') }}
-          </h6>
+                    <p>
+            <a href="tel: +998 99 350 00 00" class="text-white-50"
+              ><i class="fa fa-phone-alt mr-2"></i>Rahbariyat:
+              <span style="color: #7ab730">+998 99 350 00 00</span></a
+            >
+          </p>
           <div class="w-100">
             <div class="input-group">
-              <form>
-                <input
-                  type="email"
-                  class="form-control border-light"
-                  style="padding: 25px"
-                  placeholder="{{ __('pochta') }}"
-                />
-                <!-- <div class="input-group-append"> -->
-                <input
-                  class="btn btn-primary px-3"
-                  type="submit"
-                  value="{{ __('yuborish') }}"
-                />
-
-                <!-- </div> -->
-              </form>
             </div>
           </div>
         </div>
@@ -312,8 +316,8 @@
       <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
           <p class="m-0 text-white-50">
-            {{ __('footerRights') }} &copy;
-            <a href="https://all4u-tour.uz">All4U-TOURISM</a>. {{__('footerRights2')}}
+            {{ __('footerRights') }}
+
           </p>
         </div>
         <!-- <div class="col-lg-6 text-center text-md-right">

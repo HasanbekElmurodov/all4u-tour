@@ -4375,7 +4375,6 @@ input[type=button].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -6311,8 +6310,7 @@ a.close.disabled {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -10013,7 +10011,7 @@ h6,
   }
 }
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/back_images.jpg"), no-repeat center center;
   background-size: cover;
 }
 
@@ -10086,7 +10084,7 @@ h6,
 }
 
 .package-item {
-  transition: 0.5s;
+  transition: 0.3s;
   /* transition: cubic-bezier(0.91, 0.13, 0.83, 0.67); */
 }
 
@@ -10474,4 +10472,153 @@ h6,
   font-weight: 700;
 }
 
-/*-------------------------------------*//*# sourceMappingURL=style.css.map */
+.select_lang {
+  display: none;
+  align-items: center;
+  width: 25%;
+}
+@media (max-width: 992px) {
+  .select_lang {
+    display: flex;
+  }
+}
+.select_lang .mobLangButton {
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 0px 10px;
+}
+.select_lang ul {
+  position: absolute;
+  top: 70%;
+  left: 15px;
+  padding-left: 0;
+  background-color: #fff;
+}
+.select_lang ul li {
+  list-style-type: none;
+  color: #000 !important;
+  font-weight: 700;
+  padding-left: 0;
+  padding: 3px 10px;
+}
+.select_lang i {
+  margin-left: 5px;
+}
+
+#welcome-video .wrapper {
+  z-index: 10000;
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  height: 105%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-video .wrapper iframe {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 80%;
+}
+#welcome-video #skip-btn {
+  position: absolute;
+  bottom: 5%;
+  z-index: 11000;
+  left: 50%;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+}
+#welcome-video #skip-btn p {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-right: -50px;
+  background-color: transparent;
+  border-radius: 50px;
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+}
+#welcome-video #skip-btn p > span {
+  background-color: #f5a700;
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 12px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+}
+#welcome-video #skip-btn p > span span {
+  display: block;
+  background-color: #ed7f00;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#welcome-video #skip-btn p > span.left {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+#welcome-video #skip-btn p > span.left .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+#welcome-video #skip-btn p > span.left .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 40px;
+}
+#welcome-video #skip-btn p > span.right {
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+#welcome-video #skip-btn p > span.right .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+#welcome-video #skip-btn p > span.right .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 40px;
+}
+#welcome-video #skip-btn p:hover > span {
+  background-color: #2faee0;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#welcome-video #skip-btn p:hover > span span {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #008ac9;
+}
+#welcome-video #skip-btn p:hover > span.left .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 40px;
+}
+#welcome-video #skip-btn p:hover > span.left .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}
+#welcome-video #skip-btn p:hover > span.right .circle-left {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 40px;
+}
+#welcome-video #skip-btn p:hover > span.right .circle-right {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0;
+}/*# sourceMappingURL=style.css.map */
